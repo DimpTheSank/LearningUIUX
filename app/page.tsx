@@ -12,25 +12,37 @@ export default function Home() {
     </div>
   );
 }
-// 1. Khối lego Đầu trang
+// Thẻ <header> và <nav> giúp Google biết đây là khu vực điều hướng của trang
 function Header() {
   return (
-    <header style={{ background: '#eee', padding: '10px' }}>
-      <h2>Đây là Thanh Menu (Logo, Tìm kiếm, Đăng nhập)</h2>
+    <header>
+      <h1>Logo Công Ty</h1>
+      <nav>
+        <a href="/home">Trang chủ</a> | <a href="/about">Giới thiệu</a>
+      </nav>
     </header>
   );
 }
 
-// 2. Khối lego Nội dung chính
+// Thẻ <main> bảo với máy tính: "Nội dung chính tôi muốn người ta đọc nằm ở đây!"
 function MainContent() {
   return (
-    <main style={{ padding: '20px 0' }}>
-      <h3>Chào mừng đến với trang chủ!</h3>
-      <p>Đây là phần nội dung thay đổi liên tục của trang web.</p>
+    <main>
+      <section>
+        <h2>Dịch vụ của chúng tôi</h2>
+        <p>Chúng tôi cung cấp giải pháp làm web siêu nhanh...</p>
+      </section>
+
+      <section>
+        <h2>Đánh giá từ khách hàng</h2>
+        <article>
+          <h4>Anh Nam (CEO)</h4>
+          <p>Web dùng rất mượt, tôi rất hài lòng!</p>
+        </article>
+      </section>
     </main>
   );
 }
-
 // 3. Khối lego Chân trang
 function Footer() {
   return (
